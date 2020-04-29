@@ -1,11 +1,13 @@
 import React from "react";
 
 const CourseSelector = props => {
+
   return (
+    
     <div className="sixteen wide column">
       <select
         className="ui dropdown"
-        onChange={() => console.log("CourseSelector handle change here!")}
+        onChange={() => props.handleChange(props.targetCourse)}
         defaultValue="select"
       >
         {/* you shouldn't need to touch these options below */}

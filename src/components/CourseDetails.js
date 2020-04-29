@@ -1,7 +1,10 @@
 import React from "react";
 
 const CourseDetails = props => {
+  console.log(props)
   return (
+   
+
     <div className="ui center aligned header sixteen wide column">
       <p>{props.course.name}</p>
       <p>{props.course.instructor && `Ran by: ${props.course.instructor}`}</p>
